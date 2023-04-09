@@ -17,15 +17,6 @@ public class InterpolatedTimeline<T extends InterpolatedKeyframe> extends Timeli
 
     }
 
-    @Override
-    public void run(double time) {
-        T frame = getFrame(time);
-        if (frame != null) {
-            frame.setInterpolatedVector(getInterpolatedValue(time));
-            frame.run();
-        }
-    }
-
     public Vector getInterpolatedValue(double time) {
         if (getTimeline().isEmpty()) {
             return new Vector(0,0,0);
