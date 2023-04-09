@@ -1,0 +1,4 @@
+name: TimelineLib
+version: '${project.version}'
+main: xyz.larkyy.timelinelib.timelinelib.TimelineLib
+api-version: 1.19
