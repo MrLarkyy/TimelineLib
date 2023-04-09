@@ -13,6 +13,10 @@ public class InterpolatedTimeline<T extends InterpolatedKeyframe> extends Timeli
         super(timeline);
     }
 
+    public InterpolatedTimeline() {
+
+    }
+
     @Override
     public void run(double time) {
         T frame = getFrame(time);

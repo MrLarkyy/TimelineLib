@@ -10,6 +10,10 @@ public class Timeline<T extends Keyframe> {
         this.timeline.putAll(timeline);
     }
 
+    public Timeline() {
+
+    }
+
     public void addFrame(double time, T frame) {
         this.timeline.put(time,frame);
     }
