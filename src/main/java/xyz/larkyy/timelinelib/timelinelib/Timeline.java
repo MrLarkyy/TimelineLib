@@ -6,6 +6,10 @@ public class Timeline<T extends Keyframe> {
 
     private final TreeMap<Double, T> timeline = new TreeMap<>();
 
+    public Timeline(TreeMap<Double,T> timeline) {
+        this.timeline.putAll(timeline);
+    }
+
     public void addFrame(double time, T frame) {
         this.timeline.put(time,frame);
     }

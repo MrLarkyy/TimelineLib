@@ -8,6 +8,11 @@ import java.util.TreeMap;
 
 public class InterpolatedTimeline<T extends InterpolatedKeyframe> extends Timeline<T> {
 
+
+    public InterpolatedTimeline(TreeMap<Double, T> timeline) {
+        super(timeline);
+    }
+
     @Override
     public void run(double time) {
         T frame = getFrame(time);
